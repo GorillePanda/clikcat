@@ -10,6 +10,6 @@ function incrementer() {
     document.getElementById("compteur").textContent = compteur;
 
     // Créer un objet Audio pour jouer un son à chaque clic
-    let audio = new Audio('pop_sound.mp3');
+    let audio = new Audio('slurp.mp3');
     audio.play();
 }
