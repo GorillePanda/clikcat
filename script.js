@@ -15,5 +15,7 @@ function incrementer() {
     let audio = new Audio('slurp.mp3');
     audio.play();
     } else {
-    
+    // Changer l'image quand le clic est relaché
+    document.getElementById("clikcat").src = 'cat.jpeg';
+    }
 }
