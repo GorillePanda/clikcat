@@ -24,11 +24,4 @@ function depop() {
     // Changer l'image quand le clic est relâché
     document.getElementById("clikcat").src = 'cat.jpeg';
 }
-   // Récupérer le compteur global au chargement de la page
-    fetch('/api/compteur')
-        .then(response => response.json())
-        .then(data => {
-        // Afficher le compteur global sur la page
-        document.getElementById("compteurGlobal").textContent = data.totalClics;
-    })
-    .catch(err => console.error("Erreur lors de la récupération du compteur global", err));
+
