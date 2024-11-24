@@ -19,7 +19,7 @@ function pop() {
     // Créer un objet Audio pour jouer un son à chaque clic
     let audio = new Audio('slurp.mp3');
     audio.play();
-
+}
 function depop() {
     // Changer l'image quand le clic est relâché
     document.getElementById("clikcat").src = 'cat.jpeg';
