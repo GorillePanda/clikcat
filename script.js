@@ -22,7 +22,11 @@ function changerImage() {
         document.getElementById("compteur").textContent = compteur;
         // Changer l'image quand le clic est enfoncé
         document.getElementById("clikcat").src = 'slurp.jpeg';
-    } else {
+        // Créer un objet Audio pour jouer un son à chaque clic
+        let audio = new Audio('slurp.mp3');
+        audio.play();
+     }
+    else {
         // Revenir à l'image d'origine lorsque le clic est relâché
         document.getElementById("clikcat").src = 'cat.jpeg';
     }
