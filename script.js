@@ -15,7 +15,7 @@ function incrementer() {
     audio.play();
     
    // Fonction pour changer l'image en fonction de l'état du clic
-function changerImage(true) {
+function changerImage() {
     // Incrémenter le compteur lorsque l'utilisateur maintient le clic
     if (true) {
         compteur++;
