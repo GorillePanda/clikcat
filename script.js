@@ -19,7 +19,7 @@ function changerImage() {
         // Revenir à l'image d'origine lorsque le clic est relâché
         document.getElementById("clikcat").src = 'cat.jpeg';
     }
-     else (false) {
+    else (false) {
         // Revenir à l'image d'origine lorsque le clic est relâché
         document.getElementById("clikcat").src = 'cat.jpeg';
     }
