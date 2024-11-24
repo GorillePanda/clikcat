@@ -1,0 +1,28 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#popcat {
+    width: 300px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
