@@ -1,7 +1,6 @@
 // script.js
 
 let compteur = 0;
-let imageActuelle = 'cat.jpeg'; // Image initiale
     
    // Fonction pour changer l'image en fonction de l'état du clic
 function changerImage() {
