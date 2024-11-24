@@ -14,7 +14,7 @@ function changerImage() {
         // Créer un objet Audio pour jouer un son à chaque clic
         let audio = new Audio('slurp.mp3');
         audio.play();
-    } else {
+    } if (switch) {
         // Revenir à l'image d'origine lorsque le clic est relâché
         document.getElementById("clikcat").src = 'cat.jpeg';
     }
