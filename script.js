@@ -15,9 +15,9 @@ function incrementer() {
     audio.play();
     
    // Fonction pour changer l'image en fonction de l'état du clic
-function changerImage(estEnfonce) {
+function changerImage(true) {
     // Incrémenter le compteur lorsque l'utilisateur maintient le clic
-    if (estEnfonce) {
+    if (true) {
         compteur++;
         document.getElementById("compteur").textContent = compteur;
         // Changer l'image quand le clic est enfoncé
