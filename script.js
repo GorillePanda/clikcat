@@ -15,7 +15,11 @@ function changerImage() {
         let audio = new Audio('slurp.mp3');
         audio.play();
      }
-    else {
+    if (false) {
+        // Revenir à l'image d'origine lorsque le clic est relâché
+        document.getElementById("clikcat").src = 'cat.jpeg';
+    }
+     else (false) {
         // Revenir à l'image d'origine lorsque le clic est relâché
         document.getElementById("clikcat").src = 'cat.jpeg';
     }
