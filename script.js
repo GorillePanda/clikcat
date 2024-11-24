@@ -14,12 +14,16 @@ function incrementer() {
     let audio = new Audio('slurp.mp3');
     audio.play();
     
-    // Changer l'image à chaque clic
-    if (imageActuelle === 'cat.jpeg') {
-        document.getElementById("clikcat").src = 'slurp.jpeg'; // Remplacer par la nouvelle image
-        imageActuelle = 'slurp.jpeg'; // Mettre à jour l'image actuelle
+   // Fonction pour changer l'image en fonction de l'état du clic
+function changerImage(estEnfonce) {
+    // Incrémenter le compteur lorsque l'utilisateur maintient le clic
+    if (estEnfonce) {
+        compteur++;
+        document.getElementById("compteur").textContent = compteur;
+        // Changer l'image quand le clic est enfoncé
+        document.getElementById("clikcat").src = 'slurp.jpeg';
     } else {
-        document.getElementById("clikcat").src = 'cat.jpeg'; // Revenir à l'image initiale
-        imageActuelle = 'cat.jpeg'; // Revenir à l'image initiale
+        // Revenir à l'image d'origine lorsque le clic est relâché
+        document.getElementById("clikcat").src = 'cat.jpeg';
     }
 }
