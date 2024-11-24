@@ -19,20 +19,14 @@ function pop() {
     // Créer un objet Audio pour jouer un son à chaque clic
     let audio = new Audio('slurp.mp3');
     audio.play();
-    // Mettre à jour le compteur global sur le serveur via l'API
-        fetch('/api/compteur', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
+   // Récupérer le compteur global au chargement de la page
+    fetch('/api/compteur')
         .then(response => response.json())
         .then(data => {
-    // Afficher le compteur global
-            console.log("Compteur global mis à jour :", data.totalClics);
-        })
-        .catch(err => console.error("Erreur lors de la mise à jour du compteur global", err));
-}
+        // Afficher le compteur global sur la page
+        document.getElementById("compteurGlobal").textContent = data.totalClics;
+    })
+    .catch(err => console.error("Erreur lors de la récupération du compteur global", err));
 function depop() {
     // Changer l'image quand le clic est relâché
     document.getElementById("clikcat").src = 'cat.jpeg';
