@@ -25,11 +25,50 @@ function depop() {
     document.getElementById("clikcat").src = 'cat.jpeg';
 }
 
-// Récupérer le compteur global au chargement de la page
-fetch('/api/compteur')
-    .then(response => response.json())
-    .then(data => {
-    // Afficher le compteur global sur la page
-    document.getElementById("compteurGlobal").textContent = data.totalClics;
-})
-.catch(err => console.error("Erreur lors de la récupération du compteur global", err));
+// URLs du backend
+const GET_COUNTER_URL = '/get-counter';
+const UPDATE_COUNTER_URL = '/update-counter';
+
+// Sélection des éléments HTML
+const localCounter = document.getElementById('compteur');
+const globalCounter = document.getElementById('compteurGlobal');
+const clickImage = document.getElementById('clikcat');
+
+// Fonction pour charger le compteur global depuis le serveur
+async function loadGlobalCounter() {
+    try {
+        const response = await fetch(GET_COUNTER_URL);
+        if (!response.ok) throw new Error('Erreur lors de la récupération du compteur global');
+        const data = await response.json();
+        globalCounter.textContent = data.count; // Mise à jour du DOM
+    } catch (error) {
+        console.error('Erreur:', error);
+        alert('Impossible de charger le compteur global.');
+    }
+}
+
+// Fonction pour mettre à jour le compteur global
+async function updateGlobalCounter() {
+    try {
+        const response = await fetch(UPDATE_COUNTER_URL, { method: 'POST' });
+        if (!response.ok) throw new Error('Erreur lors de la mise à jour du compteur global');
+        const data = await response.json();
+        globalCounter.textContent = data.count; // Mise à jour du compteur global dans le DOM
+    } catch (error) {
+        console.error('Erreur:', error);
+        alert('Impossible de mettre à jour le compteur global.');
+    }
+}
+
+// Gestion des clics sur l'image
+clickImage.addEventListener('click', () => {
+    // Incrémentation du compteur local
+    localClickCount += 1;
+    localCounter.textContent = localClickCount;
+
+    // Mise à jour du compteur global
+    updateGlobalCounter();
+});
+
+// Charger le compteur global au démarrage
+loadGlobalCounter();
