@@ -30,8 +30,6 @@ p {
     position: absolute;
     font-weight: bold;
     top: 80%; /* Ajustez la position verticale du texte */
-    left: 50%;
-    transform: translateX(-50%); /* Centrer horizontalement */
     color: black;
     font-size: 120px; /* Ajustez la taille du texte */
     z-index: 3; /* Assurez-vous que ce texte est devant les images */
