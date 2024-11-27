@@ -28,11 +28,11 @@ function depop() {
 }
 function pop2() {
     // Incrémenter le compteur
-    compteur++;
+    compteur2++;
     // Mettre à jour l'affichage du compteur
-    document.getElementById("compteur2").textContent = compteur;
+    document.getElementById("compteur2").textContent = compteur2;
     // Sauvegarder le nouveau compteur dans le localStorage
-    localStorage.setItem('compteur2', compteur);
+    localStorage.setItem('compteur2', compteur2);
     // Changer l'image quand le clic est enfoncé
     document.getElementById("clikcat").src = 'slurp2.png';
     // Créer un objet Audio pour jouer un son à chaque clic
