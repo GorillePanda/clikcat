@@ -88,8 +88,17 @@ p4 {
     text-align: center;
 }
 
-/* Optionnel : vous pouvez ajuster la taille des images ici */
-#clikcat, #clikcat2 {
-    width: 1000px; /* Ajustez selon vos besoins */
-    height: auto;
-}
+/* Media Query pour les petits écrans (tablettes et mobiles) */
+@media (max-width: 768px) {
+    /* Changer l'affichage des containers en colonne */
+    .container {
+        flex-direction: column; /* Disposer les éléments en colonne */
+        align-items: center; /* Centrer les éléments */
+        margin-bottom: 30px;
+    }
+     /* Réduire la taille des images pour qu'elles s'ajustent à l'écran */
+    img {
+        width: 100%; /* Rendre les images responsives en largeur */
+        max-width: 300px; /* Limiter la largeur maximale pour éviter qu'elles deviennent trop grandes */
+    }
+
