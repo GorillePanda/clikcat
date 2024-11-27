@@ -1,53 +1,44 @@
-/* style.css */
-
+/* Assurez-vous que le body prend toute la hauteur de la fenêtre */
 body {
-    font-family: Courier, monospace;
-    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    flex-direction: column;
 }
 
+/* Container principal pour aligner les éléments côte à côte */
 .container {
-    text-align: center;
-}
-
-#clikcat, #clikcat2  {
-    width: 100%;
-    max-width: 10000px; /* Limiter la taille de l'image */
-    cursor: pointer;
-}
-
-h1 {
-    font-size: 4em;
-}
-
-p {
-    font-size: 2em;
-}
-
-/* Conteneur principal */
-.container {
-    text-align: center;
-    margin: 20px;
-}
-
-/* Conteneur des deux images */
-.image-container {
     display: flex;
-    justify-content: center; /* Aligne les blocs horizontalement */
-    gap: 20px; /* Espace entre les blocs d'images */
+    justify-content: space-around;
+    align-items: center;
+    position: relative; /* Important pour positionner le texte sur l'image */
+    margin-bottom: 20px;
 }
 
-/* Bloc contenant chaque image */
-.image-block {
+/* Pour que les images ne soient pas trop grandes et soient affichées côte à côte */
+img {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* Vous pouvez ajuster la taille des images ici */
+}
+
+/* Positionner le texte sur l'image */
+.text-overlay {
+    position: absolute; /* Positionner de façon absolue par rapport au parent */
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Pour un centrage parfait */
+    color: white; /* Assurez-vous que le texte est visible sur l'image */
+    font-size: 20px; /* Ajustez la taille du texte si nécessaire */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte pour plus de contraste */
     text-align: center;
 }
 
-/* Optionnel : vous pouvez ajuster la taille des images ici */
-#clikcat, #clikcat2 {
-    width: 1000px; /* Ajustez selon vos besoins */
-    height: auto;
+/* Si vous souhaitez personnaliser le texte sous l'image */
+p {
+    text-align: center;
 }
