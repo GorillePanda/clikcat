@@ -80,7 +80,7 @@ p4 {
 .image-container {
     display: flex;
     justify-content: center; /* Aligne les blocs horizontalement */
-    gap: 20px; /* Espace entre les blocs d'images */
+    gap: 0px; /* Espace entre les blocs d'images */
 }
 
 /* Bloc contenant chaque image */
