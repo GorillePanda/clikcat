@@ -6,7 +6,7 @@ let compteur = parseInt(localStorage.getItem('compteur2')) || 0;
 
 // Mettre à jour le compteur dans l'élément HTML dès le chargement de la page
 document.getElementById("compteur").textContent = compteur;
-document.getElementById("compteur2").textContent = compteur;
+document.getElementById("compteur2").textContent = compteur2;
 
 // Fonction pour incrémenter le compteur et jouer le son
 function pop() {
