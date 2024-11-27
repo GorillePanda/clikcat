@@ -101,4 +101,23 @@ p4 {
         width: 100%; /* Rendre les images responsives en largeur */
         max-width: 500px; /* Limiter la largeur maximale pour éviter qu'elles deviennent trop grandes */
     }
-
+        /* Ajuster la taille du texte */
+    h1 {
+        font-size: 30px; /* Réduire la taille du texte pour les petits écrans */
+    }
+        /* Ajuster la taille du texte */
+    p1 {
+        font-size: 30px; /* Réduire la taille du texte pour les petits écrans */
+    }
+        /* Ajuster la taille du texte */
+    p2 {
+        font-size: 30px; /* Réduire la taille du texte pour les petits écrans */
+    }
+        /* Ajuster la taille du texte */
+    p3 {
+        font-size: 30px; /* Réduire la taille du texte pour les petits écrans */
+    }
+        /* Ajuster la taille du texte */
+    p4 {
+        font-size: 30px; /* Réduire la taille du texte pour les petits écrans */
+    }
