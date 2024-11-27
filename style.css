@@ -23,6 +23,10 @@ p {
     font-size: 8em;
     font-weight: bold;
 }
+p2 {
+    font-size: 2em;
+    font-weight: bold;
+}
 
 /* Conteneur principal */
 .container {
