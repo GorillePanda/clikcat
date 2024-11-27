@@ -2,6 +2,7 @@
 
 // Récupérer le compteur de clics depuis le localStorage (s'il existe), sinon initialiser à 0
 let compteur = parseInt(localStorage.getItem('compteur')) || 0;
+let compteur = parseInt(localStorage.getItem('compteur2')) || 0;
 
 // Mettre à jour le compteur dans l'élément HTML dès le chargement de la page
 document.getElementById("compteur").textContent = compteur;
@@ -24,6 +25,23 @@ function depop() {
     // Changer l'image quand le clic est relâché
     document.getElementById("clikcat").src = 'cat.jpeg';
 }
+function pop2() {
+    // Incrémenter le compteur
+    compteur2++;
+    // Mettre à jour l'affichage du compteur
+    document.getElementById("compteur2").textContent = compteur2;
+    // Sauvegarder le nouveau compteur dans le localStorage
+    localStorage.setItem('compteur2', compteur2);
+    // Changer l'image quand le clic est enfoncé
+    document.getElementById("clikcat2").src = 'slurp2.png';
+    // Créer un objet Audio pour jouer un son à chaque clic
+    let audio = new Audio('slurp.mp3');
+    audio.play();
+}
+function depop2() {
+    // Changer l'image quand le clic est relâché
+    document.getElementById("clikcat").src = 'cat2.png';
+}
 
 // URLs du backend
 const GET_COUNTER_URL = '/get-counter';
@@ -31,8 +49,11 @@ const UPDATE_COUNTER_URL = '/update-counter';
 
 // Sélection des éléments HTML
 const localCounter = document.getElementById('compteur');
+const localCounter2 = document.getElementById('compteur2');
 const globalCounter = document.getElementById('compteurGlobal');
+const globalCounter2 = document.getElementById('compteurGlobal2');
 const clickImage = document.getElementById('clikcat');
+const clickImage2 = document.getElementById('clikcat2');
 
 // Fonction pour charger le compteur global depuis le serveur
 async function loadGlobalCounter() {
@@ -65,6 +86,10 @@ clickImage.addEventListener('click', () => {
     // Incrémentation du compteur local
     localClickCount += 1;
     localCounter.textContent = localClickCount;
+clickImage2.addEventListener('click2', () => {
+    // Incrémentation du compteur local
+    localClickCount2 += 1;
+    localCounter2.textContent = localClickCount2;    
 
     // Mise à jour du compteur global
     updateGlobalCounter();
