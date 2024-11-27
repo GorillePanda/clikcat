@@ -1,6 +1,6 @@
 /* Assurez-vous que le body prend toute la hauteur de la fenêtre */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Courier, monospace;
     margin: 0;
     padding: 0;
     display: flex;
