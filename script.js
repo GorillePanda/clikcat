@@ -30,9 +30,9 @@ function pop2() {
     // Incrémenter le compteur
     compteur++;
     // Mettre à jour l'affichage du compteur
-    document.getElementById("compteur").textContent = compteur;
+    document.getElementById("compteur2").textContent = compteur;
     // Sauvegarder le nouveau compteur dans le localStorage
-    localStorage.setItem('compteur', compteur);
+    localStorage.setItem('compteur2', compteur);
     // Changer l'image quand le clic est enfoncé
     document.getElementById("clikcat").src = 'slurp2.png';
     // Créer un objet Audio pour jouer un son à chaque clic
@@ -41,7 +41,7 @@ function pop2() {
 }
 function depop2() {
     // Changer l'image quand le clic est relâché
-    document.getElementById("clikcat").src = 'cat2.png';
+    document.getElementById("clikcat2").src = 'cat2.png';
 }
 
 // URLs du backend
