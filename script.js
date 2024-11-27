@@ -2,7 +2,6 @@
 
 // Récupérer le compteur de clics depuis le localStorage (s'il existe), sinon initialiser à 0
 let compteur = parseInt(localStorage.getItem('compteur')) || 0;
-let compteur = parseInt(localStorage.getItem('compteur2')) || 0;
 
 // Mettre à jour le compteur dans l'élément HTML dès le chargement de la page
 document.getElementById("compteur").textContent = compteur;
