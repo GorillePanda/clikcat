@@ -14,8 +14,9 @@ body {
     text-align: center;
 }
 
-#clikcat {
-    width: 700px;
+#clikcat, #clikcat2  {
+    width: 100%;
+    max-width: 10000px; /* Limiter la taille de l'image */
     cursor: pointer;
 }
 
