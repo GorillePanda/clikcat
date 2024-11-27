@@ -10,16 +10,19 @@
     <div class="container">
         <h1>WATERCAT</h1>
         <p>Choose your side!</p>
-    <div class="container">
-        <img src="cat.jpeg" id="clikcat" alt="ClikCat" onmousedown="pop()" onmouseup="depop()">
-        <p><span id="compteur">0</span></p>
-        <p>Angel clik : <span id="compteurGlobal">0</span></p>
-    </div>
-       <!-- Dupliquer le bloc suivant -->
-    <div class="container">
-        <img src="cat2.png" id="clikcat2" alt="ClikCat2" onmousedown="pop2()" onmouseup="depop2()">
-        <p><span id="compteur2">0</span></p>
-        <p>Evil clik : <span id="compteurGlobal2">0</span></p>
+ <!-- Conteneur pour les deux images -->
+    <div class="image-container">
+        <div class="image-block">
+            <img src="cat.jpeg" id="clikcat" alt="ClikCat" onmousedown="pop()" onmouseup="depop()">
+            <p><span id="compteur">0</span></p>
+            <p>Angel clik : <span id="compteurGlobal">0</span></p>
+        </div>
+
+        <div class="image-block">
+            <img src="cat2.png" id="clikcat2" alt="ClikCat2" onmousedown="pop2()" onmouseup="depop2()">
+            <p><span id="compteur2">0</span></p>
+            <p>Evil clik : <span id="compteurGlobal2">0</span></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
