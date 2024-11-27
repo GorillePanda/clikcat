@@ -94,11 +94,11 @@ p4 {
     .container {
         flex-direction: column; /* Disposer les éléments en colonne */
         align-items: center; /* Centrer les éléments */
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
      /* Réduire la taille des images pour qu'elles s'ajustent à l'écran */
     img {
         width: 100%; /* Rendre les images responsives en largeur */
-        max-width: 300px; /* Limiter la largeur maximale pour éviter qu'elles deviennent trop grandes */
+        max-width: 500px; /* Limiter la largeur maximale pour éviter qu'elles deviennent trop grandes */
     }
 
