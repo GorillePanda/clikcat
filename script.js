@@ -34,7 +34,7 @@ function pop2() {
     // Sauvegarder le nouveau compteur dans le localStorage
     localStorage.setItem('compteur2', compteur2);
     // Changer l'image quand le clic est enfoncé
-    document.getElementById("clikcat").src = 'slurp2.png';
+    document.getElementById("clikcat2").src = 'slurp2.png';
     // Créer un objet Audio pour jouer un son à chaque clic
     let audio = new Audio('slurp.mp3');
     audio.play();
