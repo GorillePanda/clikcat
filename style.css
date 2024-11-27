@@ -18,6 +18,14 @@ body {
 }
 h1 {
     font-size: 4em;
+    position: absolute;
+    top: 20px; /* Ajustez la position verticale du texte */
+    left: 50%;
+    transform: translateX(-50%); /* Centrer horizontalement */
+    color: white;
+    font-size: 40px; /* Ajustez la taille du texte */
+    z-index: 3; /* Assurez-vous que ce texte est devant les images */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre du texte pour plus de contraste */
 }
 p {
     font-size: 8em;
