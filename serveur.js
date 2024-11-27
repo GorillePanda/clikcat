@@ -35,6 +35,6 @@ app.post('/update-counter', (req, res) => {
 });
 
 // Lancer le serveur
-app.listen(PORT, () => {
-    console.log(`Serveur en écoute sur http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Serveur démarré sur le port ${PORT}`);
 });
