@@ -24,7 +24,7 @@ function pop() {
 }
 function depop() {
     // Changer l'image quand le clic est relâché
-    document.getElementById("clikcat").src = 'cat.jpeg';
+    document.getElementById("clikcat").src = 'cat.png';
 }
 // Fonction pour incrémenter le compteur et jouer le son
 function pop2() {
