@@ -40,7 +40,7 @@ function pop2() {
 }
 function depop2() {
     // Changer l'image quand le clic est relâché
-    document.getElementById("clikcat").src = 'cat2.png';
+    document.getElementById("clikcat2").src = 'cat2.png';
 }
 
 // URLs du backend
