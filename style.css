@@ -27,3 +27,27 @@ h1 {
 p {
     font-size: 2em;
 }
+
+/* Conteneur principal */
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Conteneur des deux images */
+.image-container {
+    display: flex;
+    justify-content: center; /* Aligne les blocs horizontalement */
+    gap: 20px; /* Espace entre les blocs d'images */
+}
+
+/* Bloc contenant chaque image */
+.image-block {
+    text-align: center;
+}
+
+/* Optionnel : vous pouvez ajuster la taille des images ici */
+#clikcat, #clikcat2 {
+    width: 150px; /* Ajustez selon vos besoins */
+    height: auto;
+}
