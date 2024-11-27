@@ -27,12 +27,24 @@ h1 {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 2); /* Ombre du texte pour plus de contraste */
 }
 p {
-    font-size: 8em;
+    position: absolute;
     font-weight: bold;
+    top: 80%; /* Ajustez la position verticale du texte */
+    left: 50%;
+    transform: translateX(-50%); /* Centrer horizontalement */
+    color: black;
+    font-size: 120px; /* Ajustez la taille du texte */
+    z-index: 3; /* Assurez-vous que ce texte est devant les images */
 }
 p2 {
-    font-size: 2em;
+    position: absolute;
     font-weight: bold;
+    top: 90%; /* Ajustez la position verticale du texte */
+    left: 50%;
+    transform: translateX(-50%); /* Centrer horizontalement */
+    color: black;
+    font-size: 40px; /* Ajustez la taille du texte */
+    z-index: 3; /* Assurez-vous que ce texte est devant les images */
 }
 
 /* Conteneur principal */
